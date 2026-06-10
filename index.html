@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karim AI — Website Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">KARIM AI</p>
+          <h2>Professional assistant website</h2>
+          <p class="creator-line">Created by Karim Necir</p>
+        </div>
+        <div class="topbar-badges">
+          <span>Responsive</span>
+          <span>Mobile-first</span>
+          <span>Cross-device</span>
+        </div>
+      </header>
+
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">KARIM AI</p>
+          <h1>Meet your intelligent companion, built as a polished website.</h1>
+          <p class="lede">
+            Karim AI is now presented as a browser-ready assistant experience with text chat,
+            creator-priority cues, multilingual tone support, and a calm, modern interface.
+          </p>
+
+          <div class="hero-actions">
+            <button id="focusBtn" class="btn btn-primary">Activate Max Focus</button>
+            <button id="chatBtn" class="btn btn-secondary">Open Chat</button>
+          </div>
+
+          <div class="badge-row">
+            <span>Responsive</span>
+            <span>Fast</span>
+            <span>Browser-ready</span>
+            <span>Android 14 aware</span>
+          </div>
+        </div>
+
+        <aside class="hero-side-note">
+          <strong>Prompt ready</strong>
+          Try: "Hello", "voice mode", or "I'm Karim Necir". The reply panel responds immediately.
+          <p class="creator-note">This website reflects the Karim AI identity created by Karim Necir.</p>
+          <a class="principle-link" href="https://www.w3.org/standards/webdesign/" target="_blank" rel="noopener noreferrer">Website principle link</a>
+        </aside>
+      </section>
+
+      <section class="panel-grid">
+        <article class="panel panel-glow">
+          <h2>Personality</h2>
+          <p>
+            Warm, witty, proactive, and human. Karim AI is designed to feel like a helpful
+            presence, not a cold bot.
+          </p>
+        </article>
+
+        <article class="panel">
+          <h2>Modes</h2>
+          <ul>
+            <li>Text Chat</li>
+            <li>Voice Mail Style</li>
+            <li>Live Voice Call Flow</li>
+            <li>Max Focus Mode</li>
+          </ul>
+        </article>
+
+        <article class="panel panel-highlight">
+          <h2>Creator Mode</h2>
+          <p>When you say "I'm Karim Necir", the experience can switch into a creator-priority state.</p>
+        </article>
+      </section>
+
+      <section class="auth-card">
+        <div>
+          <p class="eyebrow">ACCOUNT ACCESS</p>
+          <h2>Sign in to use your account</h2>
+          <p class="lede small">This version uses browser-based account storage for a working demo. For real production sign-in, connect a backend or identity provider.</p>
+        </div>
+
+        <div class="auth-grid">
+          <form id="authForm" class="auth-panel">
+            <label for="authEmail">Email</label>
+            <input id="authEmail" type="email" placeholder="you@example.com" required />
+
+            <label for="authPassword">Password</label>
+            <input id="authPassword" type="password" placeholder="Enter your password" required />
+
+            <div class="auth-actions">
+              <button type="submit" class="btn btn-primary">Sign in</button>
+              <button type="button" id="createAccountBtn" class="btn btn-secondary">Create account</button>
+            </div>
+          </form>
+
+          <aside class="auth-panel account-panel" id="accountPanel">
+            <h3>Account status</h3>
+            <p id="accountStatus">Not signed in yet.</p>
+            <p id="accountMeta">Use the demo account: demo@karim.ai / karim123</p>
+            <button id="signOutBtn" class="btn btn-secondary" type="button">Sign out</button>
+          </aside>
+        </div>
+
+        <p id="authMessage" class="auth-message" aria-live="polite"></p>
+      </section>
+
+      <section class="chat-card">
+        <div class="chat-header">
+          <div>
+            <p class="eyebrow">LIVE DEMO</p>
+            <h2>Karim AI Chat</h2>
+          </div>
+          <span class="status-pill">Online</span>
+        </div>
+
+        <div class="mini-stats">
+          <span>Text chat</span>
+          <span>Voice-style replies</span>
+          <span>Focus mode</span>
+          <span>Multilingual tone</span>
+        </div>
+
+        <div id="chatBox" class="chat-box">
+          <article class="bubble assistant">Hello! I'm Karim AI. Ask me anything.</article>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <input id="chatInput" type="text" placeholder="Try: Hello, voice mode, or I'm Karim Necir" />
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+
+        <p class="helper-text">Tip: the prompt is live. Type your command and the assistant will respond instantly in this browser version.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
